@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import useMediaQuery from "./hooks/useMediaQuery";
+// import DataFetching from "./components/DataFetching";
+import Search from "./components/Search";
 
 function App() {
+  // const matches = useMediaQuery("(min-width: 1005px)");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* {matches ? <Search /> : <DataFetching />} */}
+      <Search fetchUrl={`photos`} />
     </div>
   );
 }
