@@ -22,12 +22,10 @@ export const Right = styled.div`
 
 export const SearchBox = styled.div`
   position: absolute;
-  width: 510px;
   text-align: center;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
   padding: 7px 10px;
-  margin: 20px 50px;
   background-color: #e6e6e6;
   color: #767676;
   &:hover {
@@ -38,7 +36,6 @@ export const SearchBox = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  width: 460px;
   border: none;
   font-family: sans-serif;
   font-size: 1rem;
